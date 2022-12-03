@@ -3,13 +3,14 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class day_1 {
+public class day_01 {
+    // Find the n Elves carrying the most Calories
     public static void main(String[] args) throws IOException {
-        String file = "src/data/d1_input.txt";
+        String file_name = "src/data/d1_input.txt";
         int n_elves = 3;
         int[] max_calories = new int[n_elves];
 
-        Scanner scanner = new Scanner(new File(file));
+        Scanner scanner = new Scanner(new File(file_name));
         scanner.useDelimiter("\n\n");
 
         int placeholder;
